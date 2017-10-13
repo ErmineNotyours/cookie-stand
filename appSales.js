@@ -46,7 +46,14 @@ var firstAndPike = {
       liEl.textContent = hours[k] + ': ' + this.cookiesSoldByHour[k] + ' cookies';
       console.log('liEl = ' + liEl);
       firstandpike.appendChild(liEl);
+      this.totalCookies = this.totalCookies + this.cookiesSoldByHour[k];
     }
+    //Total cookies per day here
+    var liEl = document.createElement('li');
+    //creating li elements with text of the hours
+    liEl.textContent = 'Total: ' + this.totalCookies + ' cookies';
+    console.log('liEl = ' + liEl);
+    firstandpike.appendChild(liEl);
   }
 };
 firstAndPike.render();
@@ -95,7 +102,14 @@ var seaTac = {
       liEl.textContent = hours[k] + ': ' + this.cookiesSoldByHour[k] + ' cookies';
       console.log('liEl = ' + liEl);
       seatac.appendChild(liEl);
+      this.totalCookies = this.totalCookies + this.cookiesSoldByHour[k];
     }
+    //Total cookies per day here
+    var liEl = document.createElement('li');
+    //creating li elements with text of the hours
+    liEl.textContent = 'Total: ' + this.totalCookies + ' cookies';
+    console.log('liEl = ' + liEl);
+    seatac.appendChild(liEl);
   }
 };
 seaTac.render();
@@ -144,7 +158,14 @@ var seattleCenter = {
       liEl.textContent = hours[k] + ': ' + this.cookiesSoldByHour[k] + ' cookies';
       console.log('liEl = ' + liEl);
       seattlecenter.appendChild(liEl);
+      this.totalCookies = this.totalCookies + this.cookiesSoldByHour[k];
     }
+    //Total cookies per day here
+    var liEl = document.createElement('li');
+    //creating li elements with text of the hours
+    liEl.textContent = 'Total: ' + this.totalCookies + ' cookies';
+    console.log('liEl = ' + liEl);
+    seattlecenter.appendChild(liEl);
   }
 };
 seattleCenter.render();
@@ -193,7 +214,14 @@ var capitolHill = {
       liEl.textContent = hours[k] + ': ' + this.cookiesSoldByHour[k] + ' cookies';
       console.log('liEl = ' + liEl);
       capitolhill.appendChild(liEl);
+      this.totalCookies = this.totalCookies + this.cookiesSoldByHour[k];
     }
+    //Total cookies per day here
+    var liEl = document.createElement('li');
+    //creating li elements with text of the hours
+    liEl.textContent = 'Total: ' + this.totalCookies + ' cookies';
+    console.log('liEl = ' + liEl);
+    capitolhill.appendChild(liEl);
   }
 };
 capitolHill.render();
@@ -241,7 +269,14 @@ var alKi = {
       liEl.textContent = hours[k] + ': ' + this.cookiesSoldByHour[k] + ' cookies';
       console.log('liEl = ' + liEl);
       alki.appendChild(liEl);
+      this.totalCookies = this.totalCookies + this.cookiesSoldByHour[k];
     }
+    //Total cookies per day here
+    var liEl = document.createElement('li');
+    //creating li elements with text of the hours
+    liEl.textContent = 'Total: ' + this.totalCookies + ' cookies';
+    console.log('liEl = ' + liEl);
+    alki.appendChild(liEl);
   }
 };
 alKi.render();
