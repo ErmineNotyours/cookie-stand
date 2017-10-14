@@ -17,13 +17,14 @@ h2{
 h3{
   color: #FFFF2B;
   text-shadow: 1px 1px 0px #000000;
+  background-color: #68C1E8
 }
 table{
 /*  height: 75%; */
   border-collapse: collapse;
   width: 50%;
-  padding: 3;
-  margin: 10;
+  padding: 3px;
+  margin: 10px;
 }
 
 td, th{

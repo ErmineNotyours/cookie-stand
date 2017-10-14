@@ -22,7 +22,7 @@ var firstAndPike = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookeSoldPerHour * this.randCustByHour[j]));
+      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
@@ -36,7 +36,7 @@ var firstAndPike = {
     //create a variable to be able to append an item in our list
     //create a new h3 element
     var h3El = document.createElement('h3');
-    //give test to the new h3 eelment
+    //give test to the new h3 elment
     h3El.textContent = this.name;
     fandp.appendChild(h3El);
     for(var k = 0; k < hours.length; k++){
@@ -78,7 +78,7 @@ var seaTac = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookeSoldPerHour * this.randCustByHour[j]));
+      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
@@ -134,7 +134,7 @@ var seattleCenter = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookeSoldPerHour * this.randCustByHour[j]));
+      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
@@ -190,7 +190,7 @@ var capitolHill = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookeSoldPerHour * this.randCustByHour[j]));
+      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
@@ -245,7 +245,7 @@ var alKi = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.round(this.avgCookeSoldPerHour * this.randCustByHour[j]));
+      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
