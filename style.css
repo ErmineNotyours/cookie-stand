@@ -1,1 +1,42 @@
+*{
+  font-family: sans-serif;
+  background-color: #0BDFE8;
+  color: black;
+}
 
+h1, h2, h3{
+  font-family: 'Goblin One', cursive;
+}
+h1{
+  color: #E81B00;
+}
+h2{
+  color: #1EE816;
+  text-shadow: 1px 1px 0px #000000;
+}
+h3{
+  color: #FFFF2B;
+  text-shadow: 1px 1px 0px #000000;
+}
+table{
+/*  height: 75%; */
+  border-collapse: collapse;
+  width: 50%;
+  padding: 3;
+  margin: 10;
+}
+
+td, th{
+  border-width: medium;
+  border-style: solid;
+  background-color: #68C1E8;
+}
+td{
+  padding: 10;
+}
+
+img{
+  -moz-box-shadow: 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px #777777;
+  box-shadow: 5px 5px #777777;
+}
