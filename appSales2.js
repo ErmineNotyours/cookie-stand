@@ -32,7 +32,7 @@ function Store (name, minCustPerHour, maxCustPerHour, avgCookeSoldPerHour, calcR
     var tblBody = document.getElementById('t');
     console.log('tblBody ', tblBody);
     var row = document.createElement('tr');
-    var tdEl = document.createElement('td');
+    var tdEl = document.createElement('th');
     tdEl.textContent = this.name;
     row.appendChild(tdEl);
     console.log('Appended left header, about to enter calcCookiesSoldByHour');
@@ -43,11 +43,27 @@ function Store (name, minCustPerHour, maxCustPerHour, avgCookeSoldPerHour, calcR
       salesTd.textContent = this.cookiesSoldByHour[k];
       row.appendChild(salesTd);
     }
-    console.log('this is the table', tblBody);
-    console.log('this is row', row);
+    //console.log('this is the table', tblBody);
+    //console.log('this is row', row);
     tblBody.appendChild(row);
   };
 };
+
+//Write top row hour headers
+var tblBody = document.getElementById('t');
+var row = document.createElement('tr');
+
+var emptyH = document.createElement('th');
+row.appendChild(emptyH);
+for(var l = 0; l < hours.length; l++){
+  var tdEl = document.createElement('th');
+  console.log('l, hours[l]', l, hours[l]);
+  tdEl.textContent = hours[l];
+  row.appendChild(tdEl);
+  //console.log('hoursTd', hoursTd);
+}
+tblBody.appendChild(row);
+console.log('row = ', row);
 var firstAndPike = new Store('First and Pike', 23, 65, 6.3);
 firstAndPike.render();
 

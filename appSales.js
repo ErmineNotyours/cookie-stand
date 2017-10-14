@@ -22,7 +22,7 @@ var firstAndPike = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
+      this.cookiesSoldByHour.push(Math.floor(Math.random() * this.avgCookeSoldPerHour * this.randCustByHour[j]));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
@@ -78,7 +78,7 @@ var seaTac = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
+      this.cookiesSoldByHour.push(Math.floor(Math.random() * this.avgCookeSoldPerHour * this.randCustByHour[j]));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
@@ -134,7 +134,7 @@ var seattleCenter = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
+      this.cookiesSoldByHour.push(Math.floor(Math.random() * this.avgCookeSoldPerHour * this.randCustByHour[j]));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
@@ -190,7 +190,7 @@ var capitolHill = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
+      this.cookiesSoldByHour.push(Math.floor(Math.random() * this.avgCookeSoldPerHour * this.randCustByHour[j]));
       console.log(this.cookiesSoldByHour[j]);
     }
   },
@@ -245,8 +245,8 @@ var alKi = {
   //method for cookies sold by hours
   calcCookiesSoldByHour: function() {
     for(var j = 0; j < hours.length; j++) {
-      this.cookiesSoldByHour.push(Math.floor(Math.random(this.avgCookeSoldPerHour * this.randCustByHour[j])));
-      console.log(this.cookiesSoldByHour[j]);
+      this.cookiesSoldByHour.push(Math.floor(Math.random() * this.avgCookeSoldPerHour * this.randCustByHour[j]));
+      console.log('i, this.avgCookeSoldPerHour, this.cookiesSoldByHour[j]', j, this.avgCookeSoldPerHour, this.cookiesSoldByHour[j]);
     }
   },
   render: function(){
