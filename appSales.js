@@ -4,7 +4,7 @@ var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '
 
 //First and Pike Location
 var firstAndPike = {
-  //creating my key value pairs inside of my object they are called properties
+  //creating the key value pairs inside of the object they are called properties
   name: 'First and Pike',
   minCustPerHour: 23,
   maxCustPerHour: 65,
@@ -16,7 +16,7 @@ var firstAndPike = {
   calcRandCustByHour: function() {
     for(var i = 0; i < hours.length; i++){
       this.randCustByHour.push(Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
-      console.log(hours.length + ' ' + i + ' ' + this.randCustByHour[i]); //This is the only console.log that executes
+      console.log(hours.length + ' ' + i + ' ' + this.randCustByHour[i]);
     }
   },
   //method for cookies sold by hours
@@ -32,7 +32,6 @@ var firstAndPike = {
     //calling the methods in the object literal
     this.calcRandCustByHour();
     this.calcCookiesSoldByHour();
-    //DOM manipulation irl!!
     //create a variable to be able to append an item in our list
     //create a new h3 element
     var h3El = document.createElement('h3');
@@ -60,7 +59,6 @@ firstAndPike.render();
 
 //SeaTac Airport	3	24	1.2
 var seaTac = {
-  //creating my key value pairs inside of my object they are called properties
   name: 'SeaTac Airport',
   minCustPerHour: 3,
   maxCustPerHour: 24,
@@ -72,7 +70,7 @@ var seaTac = {
   calcRandCustByHour: function() {
     for(var i = 0; i < hours.length; i++){
       this.randCustByHour.push(Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
-      console.log(hours.length + ' ' + i + ' ' + this.randCustByHour[i]); //This is the only console.log that executes
+      console.log(hours.length + ' ' + i + ' ' + this.randCustByHour[i]);
     }
   },
   //method for cookies sold by hours
@@ -88,7 +86,6 @@ var seaTac = {
     //calling the methods in the object literal
     this.calcRandCustByHour();
     this.calcCookiesSoldByHour();
-    //DOM manipulation irl!!
     //create a variable to be able to append an item in our list
     //create a new h3 element
     var h3El = document.createElement('h3');
@@ -116,7 +113,6 @@ seaTac.render();
 
 //Seattle Center	11	38	3.7
 var seattleCenter = {
-  //creating my key value pairs inside of my object they are called properties
   name: 'Seattle Center',
   minCustPerHour: 11,
   maxCustPerHour: 38,
@@ -128,7 +124,7 @@ var seattleCenter = {
   calcRandCustByHour: function() {
     for(var i = 0; i < hours.length; i++){
       this.randCustByHour.push(Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour + 1)) + this.minCustPerHour);
-      console.log(hours.length + ' ' + i + ' ' + this.randCustByHour[i]); //This is the only console.log that executes
+      console.log(hours.length + ' ' + i + ' ' + this.randCustByHour[i]);
     }
   },
   //method for cookies sold by hours
@@ -144,7 +140,6 @@ var seattleCenter = {
     //calling the methods in the object literal
     this.calcRandCustByHour();
     this.calcCookiesSoldByHour();
-    //DOM manipulation irl!!
     //create a variable to be able to append an item in our list
     //create a new h3 element
     var h3El = document.createElement('h3');
@@ -172,7 +167,6 @@ seattleCenter.render();
 
 //Capitol Hill	20	38	2.3
 var capitolHill = {
-  //creating my key value pairs inside of my object they are called properties
   name: 'Capitol Hill',
   minCustPerHour: 20,
   maxCustPerHour: 38,
@@ -200,7 +194,6 @@ var capitolHill = {
     //calling the methods in the object literal
     this.calcRandCustByHour();
     this.calcCookiesSoldByHour();
-    //DOM manipulation irl!!
     //create a variable to be able to append an item in our list
     //create a new h3 element
     var h3El = document.createElement('h3');
@@ -227,7 +220,6 @@ var capitolHill = {
 capitolHill.render();
 //Alki	2	16	4.6
 var alKi = {
-  //creating my key value pairs inside of my object they are called properties
   name: 'Alki',
   minCustPerHour: 2,
   maxCustPerHour: 16,
@@ -255,7 +247,6 @@ var alKi = {
     //calling the methods in the object literal
     this.calcRandCustByHour();
     this.calcCookiesSoldByHour();
-    //DOM manipulation irl!!
     //create a variable to be able to append an item in our list
     //create a new h3 element
     var h3El = document.createElement('h3');

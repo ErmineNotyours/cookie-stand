@@ -1,11 +1,11 @@
 *{
   font-family: Times;
   background-color: #17AED4;
-
+  /*background-image: url( "images/salmon-bg.png");*/
   color: black;
 }
 body{
-  background-image: url( "images/salmon-bg.png");
+background-color: #17AED4;
 }
 h1, h2, h3{
   font-family: 'Goblin One', cursive;
