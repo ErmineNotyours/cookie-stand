@@ -1,9 +1,12 @@
 *{
-  font-family: sans-serif;
-  background-color: #0BDFE8;
+  font-family: Times;
+  background-color: #17AED4;
+
   color: black;
 }
-
+body{
+  background-image: url( "images/salmon-bg.png");
+}
 h1, h2, h3{
   font-family: 'Goblin One', cursive;
 }
@@ -31,11 +34,18 @@ td, th{
   border-width: medium;
   border-style: solid;
   background-color: #68C1E8;
+  font-size: 18px;
 }
 td{
   padding: 10;
 }
+#contact p{
+  font-family: Arial;
+}
 
+p{
+  font-size: 18px;
+}
 img{
   -moz-box-shadow: 5px 5px #777777;
   -webkit-box-shadow: 5px 5px #777777;
