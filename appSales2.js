@@ -1,6 +1,8 @@
 'use strict';
 console.log('Top of script.');
 var hours = ['6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
+//Need to: put store info into arrays, so they can be expanded (pushed to) by forms.
+
 // get the reference for the body
 var body = document.getElementsByTagName('body')[0];
 
@@ -35,7 +37,7 @@ function Store (name, minCustPerHour, maxCustPerHour, avgCookeSoldPerHour, calcR
     var tdEl = document.createElement('th');
     tdEl.textContent = this.name;
     row.appendChild(tdEl);
-    console.log('Appended left header, about to enter calcCookiesSoldByHour');
+    //console.log('Appended left header, about to enter calcCookiesSoldByHour');
     this.calcRandCustByHour();
     this.calcCookiesSoldByHour();
     for(var k = 0; k < hours.length; k++){
@@ -43,8 +45,8 @@ function Store (name, minCustPerHour, maxCustPerHour, avgCookeSoldPerHour, calcR
       salesTd.textContent = this.cookiesSoldByHour[k];
       row.appendChild(salesTd);
     }
-    //console.log('this is the table', tblBody);
-    //console.log('this is row', row);
+    // Need to add totals, bottom and right side!
+
     tblBody.appendChild(row);
   };
 };
